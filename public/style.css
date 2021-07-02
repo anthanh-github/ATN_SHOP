@@ -956,11 +956,6 @@ main{
     min-height: 300px;
     padding: 7.5px 15px;
 }
-footer{
-    background-color: #cccccc;
-    min-height: 70px;
-    padding: 15px;
-}
 .container{
     width: 100%;
     max-width: 1200px;
