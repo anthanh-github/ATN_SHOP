@@ -951,12 +951,6 @@ footer.copyright a{
    
 }
 // Pay
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
 header{
     background-color: #cccccc;
     min-height: 70px;
