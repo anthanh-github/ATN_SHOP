@@ -951,11 +951,6 @@ footer.copyright a{
    
 }
 // Pay
-header{
-    background-color: #cccccc;
-    min-height: 70px;
-    padding: 15px;
-}
 main{
     background-color: #dddddd;
     min-height: 300px;
