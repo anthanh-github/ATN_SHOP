@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const userName = "dbadmin";
 const userPassword = "Thanh200801";
 
-const dbName = "ATN_SHOP";
+const dbName = "ATM_SHOP";
 
 const url = "mongodb+srv://" +
     userName + ":" + userPassword +
