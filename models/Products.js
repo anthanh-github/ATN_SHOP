@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 const ProductSchema = new mongoose.Schema({
-    Product_Name: {
+    ProductName: {
         type: String,
         required: true,
         trim: true,
     },
-    Product_Code: {
+    ProductCode: {
         type: String,
         required: true,
         trim: true,
