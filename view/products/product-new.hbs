@@ -10,18 +10,14 @@
             <H1 height="150px">{{title}}</H1>
             
             <form action="/product" method="POST" >
-                <BR> ProductName:
-                <input type="text" class="form-control" name="ProductName" id="ProductName">
-                <BR> ProductCode:
-                <input type="text" class="form-control" name="ProductCode" id="ProductCode">
-                <BR> Information:
-                <textarea  type="text" class="form-control" name="Information" id="Information" rows="3"></textarea>
+                <BR> Product_Name:
+                <input type="text" class="form-control" name="Product_Name" id="Product_Name"required>
+                <BR> Product_Code:
+                <input type="text" class="form-control" name="Product_Code" id="Product_Code"required>
                 <BR> Price:
-                <input type="number" class="form-control" name="Price" id="Price">
-                <BR> Unit:
-                <input type="text" class="form-control" name="Unit" id="Unit">
+                <input type="number" class="form-control" name="Price" id="Price"required>
                 <BR> ImgLink:
-                <input type="text" class="form-control" name="ImgLink" id="ImgLink">
+                <input type="text" class="form-control" name="ImgLink" id="ImgLink"required>
                 <input type="submit" class="btn btn-primary" value="Create">
             </form>
         </div>        
