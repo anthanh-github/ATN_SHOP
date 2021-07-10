@@ -5,23 +5,48 @@
 <body>
     {{>header  title=this.title}}
 
-    <main>
+    <main class="main">
         <H1>{{title}}</H1>
-        <ol>
-            {{#each product}}
-            <li>
-                <div>
-                   <H2>{{ProductCode}}</H2>
-                   <H2>{{ProductName}}</H2>
-                    <img height="100px" src="{{ImgLink}}">
-                    <H3>Giá: {{Price}}</H3>
-                </div>
-            </li>
-            {{/each}}
-        </ol>
+        
+        <style>
+            .product-button-add{
+                margin-top: 50px;
+            }
+        </style>
+        <div class="product">
+            
+             <div class="product-row">
+                {{#each product}}
+                    <div class="product-col">
+                        <img height="100px" src="{{ImgLink}}" class="product-img">
+                        <hr/> 
+                        <div class="product-body">
+                            <H2>{{ProductName}}</H2>
+                            <BR>Thông tin sản phẩm
+                            <h3 class="info"> - Mã : {{ProductCode}}</h3>
+                            <H3 class="info"> - Giá: {{Price}} VNĐ</H3>
+                        </div>
+                        <div class="product-button-buy">
+                            <a  href="#" > 
+                                <button class="buy-button" > Buy </button>
+                            </a>    
+                            
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+
+           <div class="footer">
+                 {{>footer}}
+            </div>
+
+        </div>
+        
     </main>
     
+<!-- Khai báo trên module trước -->
 </body>
+
 <style>
     .main{
         background-color: rgb(255, 255, 255);
