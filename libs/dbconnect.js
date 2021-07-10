@@ -11,9 +11,8 @@ const dbName = "ATN_SHOP";
 
 const url = "mongodb+srv://" +
     userName + ":" + userPassword +
-    "@cluster0.s7ukh.mongodb.net/" + dbName +
+    "@cluster0.zodjv.mongodb.net/" + dbName +
     "?retryWrites=true&w=majority";
-
 function connectDB(xURL) {
     // kết nối MongoDB bằng LIB Mongoose
     mongoose.connect(xURL, {
