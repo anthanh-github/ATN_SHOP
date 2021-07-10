@@ -20,7 +20,6 @@ router.get("/new", getNewProduct);
 function getNewProduct(req, res) {
     res.render("products/product-new", { title: "Create a New Product" });
 }
-
 /// - CRUD - C - Create / Post
 router.post("/", createNewProduct);
 
@@ -29,8 +28,14 @@ function createNewProduct(req, res) {
     //console.log(req.body.Price);
     res.end(JSON.stringify(req.body));
     //res.render("product-new", { title: "Create a New Product" });
+    let newProducts = new Product({
+        Product_Name: req.body.Produc_tName,
+        Product_Code: req.body.Product_Code,
+        Price: req.body.Price,
+        ImgLink: req.body.ImgLink 
+    });
+    newProducts.save();
 }
-
 
 /// - reEDIT --> Update
 router.get("/edit", getEditProduct);
