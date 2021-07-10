@@ -29,8 +29,8 @@ function createNewProduct(req, res) {
     res.end(JSON.stringify(req.body));
     //res.render("product-new", { title: "Create a New Product" });
     let newProducts = new Product({
-        Product_Name: req.body.Produc_tName,
-        Product_Code: req.body.Product_Code,
+        ProductName: req.body.ProductName,
+        ProductCode: req.body.ProductCode,
         Price: req.body.Price,
         ImgLink: req.body.ImgLink 
     });
